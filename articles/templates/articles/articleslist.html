@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالات من</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>مقالات </h1>
+    {% for items in articles %}
+    <h2><a href="#">{{items.title}}</a></h2>
+    <p>{{items.snippet}}</p>
+    <p>{{items.date}}</p>
+    {% endfor %}
+</body>
+</html>
