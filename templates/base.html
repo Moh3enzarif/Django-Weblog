@@ -15,13 +15,25 @@
         <h2><a href="{% url 'articles:list' %}">لوگو</a></h2>
         <nav>
             <ul>
+                {% if user.is_authenticated %}
                 <li>
                     <form class="logout-link" 
-                        action=" /accounts/logout" method="post">
+                        action="/accounts/logout" method="post">
                         {% csrf_token %}
                         <button type="submit">خروج</button>
                     </form>
                 </li>
+                <li>
+                    <a href="{% url 'articles:create' %}">نوشتن مقاله جدید</a>
+                </li>
+                {% else %}
+                <li>
+                    <a href="/accounts/login">ورود</a>
+                </li>
+                <li>
+                    <a href="/accounts/signup">عضویت</a>
+                </li>
+                {% endif %}
             </ul>
         </nav>
         <div class="wrapper">
