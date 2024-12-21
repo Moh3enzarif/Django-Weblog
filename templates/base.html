@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-        <h2><a href="{% url 'articles:list' %}">لوگو</a></h2>
+<header>
+    <h2><a href="{% url 'articles:list' %}">لوگو</a></h2>
         <nav>
             <ul>
                 {% if user.is_authenticated %}
@@ -36,12 +37,13 @@
                 {% endif %}
             </ul>
         </nav>
-        <div class="wrapper">
+</header>
+    <div class="wrapper">
 
-        {%block content%}
+    {%block content%}
 
-        {% endblock %}
+    {% endblock %}
 
         </div>
-    </body>
+</body>
 </html>
