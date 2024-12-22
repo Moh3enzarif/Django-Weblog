@@ -58,7 +58,7 @@ nav button{
 
 .article{
     padding: 100px;
-    border: 1px solid #00db00;
+    border: 1px solid #008000;
     position: relative;
     padding-bottom: 40px;
 }
@@ -69,7 +69,7 @@ nav button{
 
 .article .author{
     padding: 10px;
-    background-color: #00db00;
+    background-color: #008000;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -92,4 +92,59 @@ nav button{
 
 .article-detail .article p{
     text-align: center;
+}
+
+.site-form{
+    margin-top: 60px;
+    border: 1px solid #008000;
+    padding: 20px;
+}
+
+.site-form input, .site-form textarea{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+a.highlight{
+    border: 1px solid #008000;
+    padding: 10px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+/* This is a hover for All links
+*/
+a:hover{
+    color: #008000;
+}
+
+/**********/
+
+.helptext, .helptext ul{
+    margin: 0 auto 20px;
+    color: #bbb;
+    font-size: 0.9em;
+    display: block;
+}
+
+.errorlist li{
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #ff5722;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+.errorlist{
+    padding: 0;
+}
+
+.site-form input[type="submit"]{
+    border: 0;
+    color: #fff;
+    font-size: 1.2em;
+    background: #008000 ;
+    border-radius: 4px;
+    margin: 10px;
 }
